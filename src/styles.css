@@ -1,0 +1,43 @@
+.App {
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    background: radial-gradient(circle at 10% 20%, rgb(137, 210, 253) 0%, rgb(255, 241, 188) 90%);
+    width: 450px;
+    height: 550px;
+    padding: 20px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+div {
+  line-height: 30px;
+}
+
+.background {
+  margin: 0 auto;
+
+  /* background: radial-gradient(circle at 10% 20%, rgb(137, 210, 253) 0%, rgb(255, 241, 188) 90%); */
+}
+
+img {
+  width: 150px;
+}
+
+.cityname {
+  font-size: 22px;
+  margin: 12px;
+}
+
+.temp {
+  font-size: 50px;
+  margin: 20px;
+}
