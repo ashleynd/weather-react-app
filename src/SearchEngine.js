@@ -58,10 +58,17 @@ export default function SearchEngine(props) {
           <div className="humidity">Wind Speed: {weather.wind}mph</div>
           <div className="lowandhigh">⬆️  {Math.round(weather.temperature_max)}°F | ⬇️ {Math.round(weather.temperature_min)}°F</div>
           {/* <div>Today's low: {Math.round(weather.temperature_min)}°F</div> */}
+          <p className="signature-search">
+            This project was coded by
+          <a href="https://billowy-portfolio.surge.sh/" target="_blank" rel="noreferrer"> Ashley Dragan </a> and is 
+          <a href="https://github.com/ashleynd/weather-react-app" target="_blank" rel="noreferrer"> open-sourced on GitHub </a>
+            hosted on <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a>.
+          </p>
         </div>
     );
   } else {
     return (
+        <div>
       <form onSubmit={handleSubmit}>
         <input
           type="search"
@@ -71,6 +78,13 @@ export default function SearchEngine(props) {
         />
         <input type="submit" value="🔎" className="searchbutton" />
       </form>
+          <p className="signature">
+            This project was coded by
+          <a href="https://billowy-portfolio.surge.sh/" target="_blank" rel="noreferrer"> Ashley Dragan </a> and is 
+          <a href="https://github.com/ashleynd/weather-react-app" target="_blank" rel="noreferrer"> open-sourced on GitHub </a>
+            hosted on <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a>.
+          </p>
+      </div>
     );
   }
 }
