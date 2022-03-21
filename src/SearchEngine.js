@@ -41,22 +41,23 @@ export default function SearchEngine(props) {
       <div className="background">
         <form onSubmit={handleSubmit}>
           <input
+            className="searchbar"
             type="search"
             placeholder="Search by city name"
             onChange={updateCity}
           />
-          <input type="submit" value="Search" />
+          <input type="submit" value="🔎" className="searchbutton" />
         </form>
-          <div className="cityname">{weather.name}, {weather.country}</div>
-          <div className="temp">{Math.round(weather.temperature)}°F</div>
-          <div>Feels like {Math.round(weather.feelslike)}°F</div>
-          <div>Humidity: {weather.humidity}%</div>
-          <div>Wind Speed: {weather.wind}mph</div>
-          <div>{weather.main}</div>
-          <div className="description">{weather.description}</div>
           <div><img src={weather.icon} alt={weather.description} /></div>
-          <div>Today's high: {Math.round(weather.temperature_max)}°F</div>
-          <div>Today's low: {Math.round(weather.temperature_min)}°F</div>
+          <div className="temp">{Math.round(weather.temperature)}°F</div>
+          <div className="cityname">📍{weather.name}, {weather.country}</div>
+          <div className="description">{weather.description}</div>
+          {/* <div>{weather.main}</div> */}
+          <div className="feelslike">Feels like: {Math.round(weather.feelslike)}°F</div>
+          <div className="humidity">Humidity: {weather.humidity}%</div>
+          <div className="humidity">Wind Speed: {weather.wind}mph</div>
+          <div className="lowandhigh">⬆️  {Math.round(weather.temperature_max)}°F | ⬇️ {Math.round(weather.temperature_min)}°F</div>
+          {/* <div>Today's low: {Math.round(weather.temperature_min)}°F</div> */}
         </div>
     );
   } else {
@@ -64,10 +65,11 @@ export default function SearchEngine(props) {
       <form onSubmit={handleSubmit}>
         <input
           type="search"
+          className="searchbar"
           placeholder="Search for a city"
           onChange={updateCity}
         />
-        <input type="submit" value="Search" />
+        <input type="submit" value="🔎" className="searchbutton" />
       </form>
     );
   }

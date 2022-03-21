@@ -1,10 +1,10 @@
 .App {
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     text-align: center;
     margin: 0 auto;
     background: radial-gradient(circle at 10% 20%, rgb(137, 210, 253) 0%, rgb(255, 241, 188) 90%);
     width: 450px;
-    height: 550px;
+    height: 545px;
     padding: 20px;
     box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -16,10 +16,11 @@
 
 .description {
   text-transform: capitalize;
+  font-size: 23px;
 }
 
 div {
-  line-height: 30px;
+  line-height: 34px;
 }
 
 .background {
@@ -29,15 +30,48 @@ div {
 }
 
 img {
-  width: 150px;
+  width: 100px;
+  margin-bottom: -20px;
 }
 
 .cityname {
-  font-size: 22px;
+  font-size: 23px;
   margin: 12px;
 }
 
 .temp {
   font-size: 50px;
   margin: 20px;
+  color: rgb(150, 0, 87);
+}
+
+.humidity {
+  color: rgb(75, 75, 75);
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.lowandhigh {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.searchbar {
+  border-radius: 5px;
+  border: 2px;
+  height: 30px;
+  box-shadow: 7px 3px 12px 1px rgba(0, 0, 0, 0.3);
+}
+
+.searchbutton {
+  height: 30px;
+  width: 33px;
+  border: 2px;
+  border-radius: 5px;
+  box-shadow: 7px 3px 12px 1px rgba(0, 0, 0, 0.3);
+}
+
+.feelslike {
+  font-size: 18px;
+  margin: 15px;
 }
